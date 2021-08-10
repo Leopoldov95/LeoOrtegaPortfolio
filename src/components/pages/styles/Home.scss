@@ -32,4 +32,31 @@
       }
     }
   }
+  .home-btn {
+    position: absolute;
+    font-size: 2.5rem;
+    color: slateblue;
+    bottom: 16px;
+    border: 1px solid slateblue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: home-arrow 2s infinite;
+    transition: all ease;
+  }
 }
+@keyframes home-arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+ 

@@ -1,0 +1,25 @@
+.Social {
+   display: flex;
+   flex-direction: column;
+   z-index: 15;
+   position: fixed;
+   align-items: center;
+   right: 0;
+   bottom: 0;
+   margin-right: 14px;
+   a {
+       color: white;
+       font-size: 1.3rem;
+       margin: 6px 0;
+       transition: all ease 300ms;
+       &:hover{
+        color: slateblue;
+        transform: translateY(-3px);
+       }
+   }
+   .line {
+    height: 200px;
+    background-color: slateblue;
+    width: 2px;
+   }
+}
