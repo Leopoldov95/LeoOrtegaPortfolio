@@ -1,0 +1,5 @@
+- add resume btn
+- add sticky social media
+- add extra projects section
+- animaion
+- leo ortge a link
