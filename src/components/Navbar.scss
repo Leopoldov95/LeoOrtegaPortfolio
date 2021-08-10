@@ -1,0 +1,25 @@
+.Navbar {
+  position: fixed;
+  color: white;
+  width: 100%;
+  padding: 2rem 0;
+  background: transparent;
+  z-index: 5;
+  a,
+  a:visited {
+    color: inherit;
+  }
+
+  a {
+    padding: 0 1rem;
+  }
+  .container {
+    max-width: 1200px;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    .brand {
+      color: slateblue;
+    }
+  }
+}

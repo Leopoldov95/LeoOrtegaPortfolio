@@ -1,0 +1,29 @@
+.About {
+  margin-top: 2rem;
+  h1 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      img {
+        width: 150px;
+        margin: 2rem 0;
+      }
+    }
+  }
+  .info {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+}
