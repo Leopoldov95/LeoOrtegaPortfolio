@@ -21,5 +21,13 @@
     .brand {
       color: slateblue;
     }
+    .links {
+      .btn {
+        margin-left: 1rem;
+        border: 1px solid slateblue;
+        color: slateblue;
+        padding: 12px 1rem;
+      }
+    }
   }
 }

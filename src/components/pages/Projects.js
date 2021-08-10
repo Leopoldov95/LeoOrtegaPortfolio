@@ -16,11 +16,30 @@ const Projects = () => {
               <img src="img/main/skills/express.svg" />
               <img src="img/main/skills/react.svg" />
               <img src="img/main/skills/nodejs.svg" />
+              <img src="img/main/skills/api.svg" />
             </div>
             <p>
               A full-stack ecommerce website created using the MERN stack. Users
               can create an account and save items to their shopping cart.
             </p>
+            <div className="links">
+              <a
+                className="btn"
+                href="https://leocycles.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+              <a
+                className="btn"
+                href="https://github.com/Leopoldov95/bicycle_ecomm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -39,6 +58,24 @@ const Projects = () => {
               information. I created this using ReactJS and communicating with
               an API to obtain data.
             </p>
+            <div className="links">
+              <a
+                className="btn"
+                href="https://reactjsnationaldex.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+              <a
+                className="btn"
+                href="https://github.com/Leopoldov95/Pokedex-React-Modern"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -58,6 +95,24 @@ const Projects = () => {
               city in the world, has an autocomplete search bar, and a built-in
               interactive map.
             </p>
+            <div className="links">
+              <a
+                className="btn"
+                href="https://modernweatherapp.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+              <a
+                className="btn"
+                href="https://github.com/Leopoldov95/bicycle_ecomm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -76,6 +131,24 @@ const Projects = () => {
               JavaScript and SASS. Includes rules for those who are new to the
               game.
             </p>
+            <div className="links">
+              <a
+                className="btn"
+                href="https://leocycles.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+              <a
+                className="btn"
+                href="https://github.com/Leopoldov95/bicycle_ecomm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
           </div>
         </div>
         <div className="card">
@@ -86,12 +159,30 @@ const Projects = () => {
             <h1>Tonne Winery</h1>
             <div className="tech">
               <img src="img/main/skills/html5.svg" />
-              <img src="img/main/skills/css3.svg" />
+              <img src="img/main/skills/sass.svg" />
             </div>
             <p>
               A full and mobile responsive website for a winery created with
               HTML and SASS.
             </p>
+            <div className="links">
+              <a
+                className="btn"
+                href="https://leocycles.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+              <a
+                className="btn"
+                href="https://github.com/Leopoldov95/bicycle_ecomm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
           </div>
         </div>
       </section>
