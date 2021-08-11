@@ -17,7 +17,7 @@ const Main = () => {
       <section id="projects" name="projects">
         <Projects />
       </section>
-      <section id="tech" name='tech'>
+      <section id="tech" name="tech">
         <Tech />
       </section>
       <section id="contact" name="contacts">

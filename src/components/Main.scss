@@ -3,3 +3,11 @@ $primary-color: slateblue;
 .primary-color {
   color: $primary-color;
 }
+
+.btn-primary {
+  border: 1px solid slateblue;
+  background-color: transparent;
+  color: slateblue;
+  padding: 12px 1rem;
+  margin: 2rem auto;
+}

@@ -1,22 +1,14 @@
 .Contact {
-    margin: 3rem 0;
-    h1 {
-        font-size: 3rem;
-        text-align: center;
-    }
+  margin: 3rem 0;
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
 
-    form {
-        max-width: 900px;
-        /* padding: 0 10rem; */
-        width: 100%;
-        margin: auto;
-        button {
-            border: 1px solid slateblue;
-            background-color: transparent;
-            color: slateblue;
-            padding: 12px 1rem;
-            /* text-align: center; */
-            margin: 2rem auto;
-        }
-    } 
+  form {
+    max-width: 900px;
+    /* padding: 0 10rem; */
+    width: 100%;
+    margin: auto;
+  }
 }
