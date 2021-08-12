@@ -35,9 +35,13 @@
       .info {
         text-align: center;
         .tech {
-          img {
-            width: 35px;
-            margin: 0 6px;
+          color: slateblue;
+          padding: 10px 0;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          span {
+            padding: 0 10px;
           }
         }
       }
@@ -45,6 +49,9 @@
   }
   .more {
     text-align: center;
+    .btn-primary {
+      width: 100px;
+    }
     .more-projects {
       display: flex;
       justify-content: center;
@@ -58,7 +65,7 @@
         padding: 1rem;
         transition: all ease 500ms;
         &:hover {
-          transform: translateY(-10px);
+          transform: translateY(-5px);
         }
         .icons {
           display: flex;
@@ -83,12 +90,13 @@
           }
         }
         .tech {
+          color: slateblue;
+          padding: 10px 0;
           display: flex;
           justify-content: center;
-          align-items: center;
-          img {
-            width: 35px;
-            margin: 0 6px;
+          flex-wrap: wrap;
+          span {
+            padding: 0 10px;
           }
         }
       }
@@ -98,5 +106,56 @@
     height: 100% !important;
     opacity: 1 !important;
     transition: all ease 200ms !important;
+  }
+}
+
+/* Tablet/Mobile Display */
+@media only screen and (max-width: 768px) {
+  .Projects {
+    .container {
+      .card {
+        width: 100%;
+        margin: 0 1rem 2rem 1rem;
+        display: flex;
+        padding: 2rem 1rem;
+        .info {
+          h1 {
+            font-size: 1.5rem;
+          }
+          .links {
+            display: flex;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+/* Mobile Display */
+@media only screen and (max-width: 580px) {
+  .Projects {
+    .container {
+      .card {
+        flex-direction: column;
+        .info {
+          .tech {
+            span {
+              font-size: 12px;
+            }
+          }
+          .links {
+            display: flex;
+            justify-content: center;
+            .btn {
+              width: 95px;
+              margin: 10px;
+              font-size: 14px;
+              padding: 10px 12px;
+            }
+          }
+        }
+      }
+    }
   }
 }

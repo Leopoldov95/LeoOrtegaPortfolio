@@ -5,6 +5,7 @@
   padding: 8px 1rem;
   background: transparent;
   z-index: 10;
+  transition: all ease 300ms;
   a,
   a:visited {
     color: inherit;
@@ -18,6 +19,9 @@
 
     .brand {
       color: yellow;
+      &-sm {
+        display: none;
+      }
     }
     .menu {
       .hamburger {
@@ -51,6 +55,7 @@
 .alt-nav {
   box-shadow: 0px 4px 8px #9886a88f;
   background-color: rgba(51, 51, 51, 0.95);
+  transition: all ease 300ms;
   .brand {
     color: slateblue !important;
   }
@@ -60,6 +65,14 @@
 @media only screen and (max-width: 768px) {
   .Navbar {
     .container {
+      .brand {
+        &-lg {
+          display: none;
+        }
+        &-sm {
+          display: block;
+        }
+      } 
       .menu {
         .hamburger {
           display: block;
@@ -88,3 +101,4 @@
     }
   }
 }
+

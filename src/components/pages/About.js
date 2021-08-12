@@ -4,28 +4,37 @@ import VisibilitySensor from "react-visibility-sensor-v2";
 
 const About = () => {
   const [visibility, setVisibility] = useState(false);
+  const [hasActivated, setHasActivated] = useState(false);
   return (
     <div className="About">
-      <h1>About Me</h1>
-
-      <section className="icons">
-        <VisibilitySensor
+      <VisibilitySensor
           partialVisibility
           onChange={(isVisible) => {
             setVisibility(isVisible);
+            if (isVisible) {
+              setHasActivated(true)
+        }
           }}
         >
           <>
+      <h1 style={{
+                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
+                opacity: visibility || hasActivated ? 1 : 0.25,
+                transition: "all 700ms linear",
+              }}>About Me</h1>
+
+      <section className="icons">
+        
             <div
               className="icon-container"
               style={{
-                transform: visibility ? "translateY(0)" : "translateY(50px)",
-                opacity: visibility ? 1 : 0.25,
+                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
+                opacity: visibility || hasActivated ? 1 : 0.25,
                 transition: "all 200ms linear",
               }}
             >
               <div className="img-wrapper">
-                <img src="img/main/about/coding.png"></img>
+                <img src="img/main/about/coding.png" alt="coding" />
               </div>
 
               <h4>Web Developer</h4>
@@ -33,13 +42,13 @@ const About = () => {
             <div
               className="icon-container"
               style={{
-                transform: visibility ? "translateY(0)" : "translateY(50px)",
-                opacity: visibility ? 1 : 0.25,
+                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
+                opacity: visibility || hasActivated ? 1 : 0.25,
                 transition: "all 400ms linear",
               }}
             >
               <div className="img-wrapper">
-                <img src="img/main/about/design-thinking.png"></img>
+                <img src="img/main/about/design-thinking.png" alt="design-thinking"/>
               </div>
 
               <h4>Creative Design</h4>
@@ -47,13 +56,13 @@ const About = () => {
             <div
               className="icon-container"
               style={{
-                transform: visibility ? "translateY(0)" : "translateY(50px)",
-                opacity: visibility ? 1 : 0.25,
+                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
+                opacity: visibility || hasActivated ? 1 : 0.25,
                 transition: "all 600ms linear",
               }}
             >
               <div className="img-wrapper">
-                <img src="img/main/about/book.png"></img>
+                <img src="img/main/about/book.png" alt="book" />
               </div>
 
               <h4>Problem Solver</h4>
@@ -61,21 +70,26 @@ const About = () => {
             <div
               className="icon-container"
               style={{
-                transform: visibility ? "translateY(0)" : "translateY(50px)",
-                opacity: visibility ? 1 : 0.25,
+                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
+                opacity: visibility || hasActivated ? 1 : 0.25,
                 transition: "all 800ms linear",
               }}
             >
               <div className="img-wrapper">
-                <img src="img/main/about/passport.png"></img>
+                <img src="img/main/about/passport.png" alt="passport" />
               </div>
 
               <h4>Traveler</h4>
             </div>
-          </>
-        </VisibilitySensor>
+         
       </section>
-      <section className="info">
+      <section className="info" 
+      style={{
+        transform: visibility || hasActivated ? "translateY(0)" : "translateY(80px)",
+        opacity: visibility || hasActivated ? 1 : 0.25,
+        transition: "all 700ms linear",
+      }}
+      >
         <div className="quote">
           <p>
             My name is <span className="primary-color">Leo Ortega</span> and I
@@ -92,11 +106,12 @@ const About = () => {
             creativity.
           </p>
           <p>
-            In addition to coding, I enjoy traveling, cycling, and going on
-            hikes.
+            When I'm not coding, you can find me cycling, going on a hike, or travelling.
           </p>
         </div>
       </section>
+      </>
+        </VisibilitySensor>
     </div>
   );
 };

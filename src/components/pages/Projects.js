@@ -4,6 +4,7 @@ import VisibilitySensor from "react-visibility-sensor-v2";
 const Projects = () => {
   const [visibility, setVisibility] = useState(false);
   const [display, setDisplay] = useState(false);
+  const [hasActivated, setHasActivated] = useState(false);
 
   const handleDisplay = (e) => {
     e.preventDefault();
@@ -11,34 +12,43 @@ const Projects = () => {
   };
   return (
     <div className="Projects">
-      <h1>My Projects</h1>
-      <section className="container">
-        <VisibilitySensor
+      <VisibilitySensor
           partialVisibility
           onChange={(isVisible) => {
             setVisibility(isVisible);
+            if (isVisible) {
+              setHasActivated(true)
+            }
           }}
         >
           <>
+      <h1 
+      style={{
+        transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
+        opacity: visibility || hasActivated ? 1 : 0.25,
+        transition: "all 500ms linear",
+      }}
+      >My Projects</h1>
+      <section className="container">
             <div
               className="card"
               style={{
-                transform: visibility ? "translateY(0)" : "translateY(50px)",
-                opacity: visibility ? 1 : 0.25,
+                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
+                opacity: visibility || hasActivated ? 1 : 0.25,
                 transition: "all 600ms linear",
               }}
             >
               <div className="img">
-                <img src="img/main/projects/cycle.png" />
+                <img src="img/main/projects/cycle.png" alt="cycle" />
               </div>
               <div className="info">
                 <h1>Bicycle Ecommerce</h1>
                 <div className="tech">
-                  <img src="img/main/skills/mongodb.svg" />
-                  <img src="img/main/skills/express.svg" />
-                  <img src="img/main/skills/react.svg" />
-                  <img src="img/main/skills/nodejs.svg" />
-                  <img src="img/main/skills/api.svg" />
+                  <span>MongoDB</span>
+                  <span>Express</span>
+                  <span>ReactJS</span>
+                  <span>NodeJS</span>
+                  <span>REST API</span>
                 </div>
                 <p>
                   A full-stack ecommerce website created using the MERN stack.
@@ -68,20 +78,20 @@ const Projects = () => {
             <div
               className="card"
               style={{
-                transform: visibility ? "translateY(0)" : "translateY(50px)",
-                opacity: visibility ? 1 : 0.25,
+                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
+                opacity: visibility || hasActivated ? 1 : 0.25,
                 transition: "all 600ms linear",
               }}
             >
               <div className="img">
-                <img src="img/main/projects/pokedex.png" />
+                <img src="img/main/projects/pokedex.png" alt="pokedex" />
               </div>
               <div className="info">
                 <h1>ReactJS Pokedex</h1>
                 <div className="tech">
-                  <img src="img/main/skills/react.svg" />
-                  <img src="img/main/skills/api.svg" />
-                  <img src="img/main/skills/sass.svg" />
+                  <span>ReactJS</span>
+                  <span>API</span>
+                  <span>SASS</span>
                 </div>
                 <p>
                   A full featured Pokdex app that contains all Pokemon and their
@@ -108,19 +118,17 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </>
-        </VisibilitySensor>
         <div className="card">
           <div className="img">
-            <img src="img/main/projects/weather.png" />
+            <img src="img/main/projects/weather.png" alt="weather" />
           </div>
           <div className="info">
             <h1>Weather App</h1>
             <div className="tech">
-              <img src="img/main/skills/javascript.svg" />
-              <img src="img/main/skills/api.svg" />
-              <img src="img/main/skills/html5.svg" />
-              <img src="img/main/skills/css3.svg" />
+              <span>JavaScript</span>
+              <span>API</span>
+              <span>HTML</span>
+              <span>CSS</span>
             </div>
             <p>
               A weather app that shows weather data fetched from an API from any
@@ -149,14 +157,14 @@ const Projects = () => {
         </div>
         <div className="card">
           <div className="img">
-            <img src="img/main/projects/qwixx.png" />
+            <img src="img/main/projects/qwixx.png" alt="qwixx"/>
           </div>
           <div className="info">
             <h1>Qwixx JS</h1>
             <div className="tech">
-              <img src="img/main/skills/javascript.svg" />
-              <img src="img/main/skills/html5.svg" />
-              <img src="img/main/skills/css3.svg" />
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
             </div>
             <p>
               A 2 to 4 player luck and strategy dice game created using
@@ -185,13 +193,13 @@ const Projects = () => {
         </div>
         <div className="card">
           <div className="img">
-            <img src="img/main/projects/winery.png" />
+            <img src="img/main/projects/winery.png" alt="winery" />
           </div>
           <div className="info">
             <h1>Tonne Winery</h1>
             <div className="tech">
-              <img src="img/main/skills/html5.svg" />
-              <img src="img/main/skills/sass.svg" />
+              <span>HTML</span>
+              <span>SASS</span>
             </div>
             <p>
               A full and mobile responsive website for a winery created using
@@ -254,12 +262,14 @@ const Projects = () => {
               </p>
             </div>
             <div className="tech">
-              <img src="img/main/skills/mongodb.svg" />
-              <img src="img/main/skills/pug.png" />
+              <span>Pug</span>
+              <span>SASS</span>
             </div>
           </div>
         </section>
       </section>
+      </>
+        </VisibilitySensor>
     </div>
   );
 };

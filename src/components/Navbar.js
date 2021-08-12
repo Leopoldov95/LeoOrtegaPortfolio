@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     listener = document.addEventListener("scroll", (e) => {
       var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 400) {
+      if (scrolled >= 500) {
         setScrollState(true);
       } else {
         setScrollState(false);
@@ -30,7 +30,8 @@ const Navbar = () => {
     <nav className={`Navbar ${scrollState && "alt-nav"}`}>
       <div className="container">
         <div className="brand">
-          <h2>{"{LEO ORTEGA}"}</h2>
+          <h2 className='brand-lg'>{"{LEO ORTEGA}"}</h2>
+          <h2 className='brand-sm'>{"{LO}"}</h2>
         </div>
         <div className="menu">
           <div className="hamburger" onClick={toggleMenu}>

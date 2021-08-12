@@ -31,7 +31,7 @@ const Home = () => {
           Front End Developer specializing in React, JavaScript, and Node.
         </h4>
       </main>
-      <Link to="about" className="home-btn" smooth={true} duration={500}>
+      <Link to="about" className="home-btn" smooth={true} offset={-80} duration={500}>
         <i className="fas fa-chevron-down"></i>
       </Link>
       {/* <a href='#about'></a> */}
