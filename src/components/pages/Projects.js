@@ -43,7 +43,7 @@ const Projects = () => {
                 <p>
                   A full-stack ecommerce website created using the MERN stack.
                   Users can create an account and save items to their shopping
-                  cart.
+                  cart, all of which is then saved in a database.
                 </p>
                 <div className="links">
                   <a
@@ -125,7 +125,7 @@ const Projects = () => {
             <p>
               A weather app that shows weather data fetched from an API from any
               city in the world, has an autocomplete search bar, and a built-in
-              interactive map.
+              interactive map. Created with JavaScript.
             </p>
             <div className="links">
               <a
@@ -138,7 +138,7 @@ const Projects = () => {
               </a>
               <a
                 className="btn"
-                href="https://github.com/Leopoldov95/bicycle_ecomm"
+                href="https://github.com/Leopoldov95/Weather-Modern"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -160,13 +160,13 @@ const Projects = () => {
             </div>
             <p>
               A 2 to 4 player luck and strategy dice game created using
-              JavaScript and SASS. Includes rules for those who are new to the
+              JavaScript, HTML and SASS. Includes rules for those who are new to the
               game.
             </p>
             <div className="links">
               <a
                 className="btn"
-                href="https://leocycles.netlify.app/"
+                href="https://qwixxjs.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -174,7 +174,7 @@ const Projects = () => {
               </a>
               <a
                 className="btn"
-                href="https://github.com/Leopoldov95/bicycle_ecomm"
+                href="https://github.com/Leopoldov95/QwixxJS-Multiplayer"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -194,13 +194,12 @@ const Projects = () => {
               <img src="img/main/skills/sass.svg" />
             </div>
             <p>
-              A full and mobile responsive website for a winery created with
-              HTML and SASS.
+              A full and mobile responsive website for a winery created using HTML and SASS. Contains multiple pages and serves as a proof of concept.
             </p>
             <div className="links">
               <a
                 className="btn"
-                href="https://leocycles.netlify.app/"
+                href="https://tonne-winery-project.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -208,7 +207,7 @@ const Projects = () => {
               </a>
               <a
                 className="btn"
-                href="https://github.com/Leopoldov95/bicycle_ecomm"
+                href="https://github.com/Leopoldov95/Winery-landing-page-clone"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -219,19 +218,25 @@ const Projects = () => {
         </div>
       </section>
       <section className="more">
-        <button className="btn-primary">More</button>
-        <section className="more-projects" onClick={handleDisplay}>
-          {handleDisplay && (
+        <button  onClick={handleDisplay} className="btn-primary">{display ? 'Hide' : 'More'}</button>
+        <section className={`more-projects ${display && 'more-active'}`}>
             <div className="card">
               <div className="icons">
                 <div className="folder">
                   <i className="far fa-folder"></i>
                 </div>
                 <div className="links">
-                  <a>
+                  <a 
+                    href="https://github.com/Leopoldov95/Leopoldov95-portfolio"
+                  target="_blank"
+                    rel="noopener noreferrer">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a>
+                  <a
+                  href="https://leovportfolio.netlify.app/"
+                
+                  target="_blank"
+                  rel="noopener noreferrer">
                     <i className="fas fa-external-link-alt"></i>
                   </a>
                 </div>
@@ -240,12 +245,14 @@ const Projects = () => {
                 <h3>Personal Portfolio V1</h3>
                 <p>
                   This was my first attempt at creating a personal portfolio. I
-                  created this{" "}
+                  created this when I only knew HTML, CSS, and SASS.
                 </p>
               </div>
-              <div className="tech"></div>
+              <div className="tech">
+                  <img src="img/main/skills/mongodb.svg" />
+                  <img src="img/main/skills/pug.png" />  
+              </div>
             </div>
-          )}
         </section>
       </section>
     </div>

@@ -10,7 +10,8 @@ li {
 a {
   text-decoration: none;
 }
-a:hover {
+a:hover,
+button:hover {
   cursor: pointer;
 }
 body {

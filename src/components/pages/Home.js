@@ -19,7 +19,8 @@ const Home = () => {
                 " Leo Ortega",
                 " a Web Developer",
                 " a Programmer",
-                " a Lifelong Learner",
+                " a Tech Aficionado ",
+                " a World Traveller"
               ],
               autoStart: true,
               loop: true,

@@ -3,6 +3,9 @@ import "./styles/Tech.scss";
 import VisibilitySensor from "react-visibility-sensor-v2";
 const Tech = () => {
   const [visibility, setVisibility] = useState(false);
+  const [useSensor, setUseSensor] = useState(true)
+
+  
   return (
     <div className="Tech">
       <h1>Tech & Skills</h1>
@@ -14,9 +17,10 @@ const Tech = () => {
       </p>
       <div className="tech-container">
         <VisibilitySensor
-          partialVisibility
+          active={useSensor}
           onChange={(isVisible) => {
-            setVisibility(isVisible);
+            setVisibility(isVisible)
+            
           }}
         >
           <>
