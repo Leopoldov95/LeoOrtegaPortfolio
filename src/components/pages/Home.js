@@ -20,7 +20,7 @@ const Home = () => {
                 " a Web Developer",
                 " a Programmer",
                 " a Tech Aficionado ",
-                " a World Traveller"
+                " a World Traveller",
               ],
               autoStart: true,
               loop: true,

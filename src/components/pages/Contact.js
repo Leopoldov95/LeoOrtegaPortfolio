@@ -15,50 +15,71 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 const Contact = () => {
-  const [form, setForm] = useState({
+  const classes = useStyles();
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
-    mesage: "",
+    message: "",
   });
-  const classes = useStyles();
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="Contact">
       <h1>Get In Touch</h1>
       <form className={classes.root}>
         <TextField
           required
+          autoComplete="new-password"
           id="standard-full-width"
           label="Name"
           style={{ margin: 8 }}
           fullWidth
           margin="normal"
+          onChange={handleChange}
+          name="name"
         />
         <TextField
           required
+          autoComplete="new-password"
           id="standard-full-width"
           label="Email"
           style={{ margin: 8 }}
           fullWidth
           margin="normal"
+          onChange={handleChange}
+          name="email"
         />
         <TextField
+          autoComplete="new-password"
           id="standard-full-width"
           label="Subject"
           style={{ margin: 8 }}
           fullWidth
           margin="normal"
+          onChange={handleChange}
+          name="subject"
         />
         <TextField
           required
+          autoComplete="new-password"
           id="standard-full-width"
           label="Message"
           multiline
           style={{ margin: 8 }}
           fullWidth
           margin="normal"
+          onChange={handleChange}
+          name="message"
         />
-        <button className="btn-primary">Send Message</button>
+        <button onClick={handleFormSubmit} className="btn-primary">
+          Send Message
+        </button>
       </form>
     </div>
   );

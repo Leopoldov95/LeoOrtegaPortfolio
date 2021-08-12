@@ -19,7 +19,7 @@
     .brand {
       color: yellow;
     }
-    .menu{
+    .menu {
       .hamburger {
         display: none;
         font-size: 2rem;
@@ -45,13 +45,12 @@
         }
       }
     }
-    
   }
 }
 
 .alt-nav {
   box-shadow: 0px 4px 8px #9886a88f;
-  background-color: rgba(51,51,51,0.95);
+  background-color: rgba(51, 51, 51, 0.95);
   .brand {
     color: slateblue !important;
   }
