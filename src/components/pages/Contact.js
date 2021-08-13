@@ -54,7 +54,7 @@ const Contact = () => {
   };
 
   const handleFormSubmit = (e) => {
-    e.preventDefault();
+    /* e.preventDefault(); */
     nameValidation();
     emailValidation();
     messageValidation();
