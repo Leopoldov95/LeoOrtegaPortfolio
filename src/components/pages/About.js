@@ -117,17 +117,17 @@ const About = () => {
             <div className="quote">
               <p>
                 My name is <span className="primary-color">Leo Ortega</span> and
-                I am a <span className="primary-color">Web Developer</span>. I
-                specialize in Front-End Web Development and have worked with the
-                Back-End as well. I enjoy solving problems through code, and I
-                am excited to work alongside other amazing programmers.
+                I am a <span className="primary-color">Web Developer</span>{" "}
+                specializing in Front-End Web Development and have also worked
+                with the Back-End. I enjoy solving problems through code and am
+                excited to work alongside other amazing developers.
               </p>
               <p>
-                I enjoy building interactive websites that look great across all
-                platforms using mainly HTML, SASS, JavaScript, and ReactJS. I am
-                always experimenting with new tools and always learning. I find
-                Web Development to be a perfect blend of technical challenges
-                and creativity.
+                By building interactive websites that look great across all
+                platforms using mainly HTML, SASS, JavaScript, and ReactJS, I
+                get the opportunity to experiment with new tools and learn new
+                skills. I find Web Development to be a perfect blend of
+                technical challenges and creativity.
               </p>
               <p>
                 When I'm not coding, you can find me cycling, going on a hike,

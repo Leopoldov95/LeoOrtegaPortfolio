@@ -41,8 +41,8 @@ const Tech = () => {
           >
             I use HTML, CSS, SASS , Javascript, and React.JS for front end work
             and have been using Node.JS, Express.JS, and MongoDB to create the
-            backend. I have also created fullstack projects using the MERN
-            stack. My editor of choice is VSCode.
+            back end. Additionally, I have created fullstack projects using the
+            MERN stack. My editor of choice is VSCode.
           </p>
           <div className="tech-container">
             <div
