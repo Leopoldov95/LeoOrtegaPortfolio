@@ -16,7 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    margin-top: 3rem;
     .card {
       width: 40%;
       margin-bottom: 2rem;
@@ -79,6 +79,10 @@
             a {
               padding-left: 1rem;
               font-size: 1.2rem;
+              color: black;
+              &:hover {
+                color: slateblue;
+              }
             }
           }
         }
@@ -126,7 +130,6 @@
             display: flex;
           }
         }
-        
       }
     }
   }
@@ -135,6 +138,7 @@
 /* Mobile Display */
 @media only screen and (max-width: 580px) {
   .Projects {
+    margin-top: 2rem;
     .container {
       .card {
         flex-direction: column;

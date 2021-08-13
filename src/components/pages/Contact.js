@@ -34,24 +34,24 @@ const Contact = () => {
 
   const nameValidation = () => {
     if (formData.name === "") {
-      return setIsNameInvalid(true)
+      return setIsNameInvalid(true);
     }
     setIsNameInvalid(false);
-  }
+  };
 
   const emailValidation = () => {
     if (/.+@.+\..+/.test(formData.email) === false) {
-      return (setIsEmailInvalid(true))
+      return setIsEmailInvalid(true);
     }
     setIsEmailInvalid(false);
-  }
+  };
 
   const messageValidation = () => {
     if (formData.message === "") {
-      return (setIsMessageInvalid(true))
+      return setIsMessageInvalid(true);
     }
     setIsMessageInvalid(false);
-  }
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -63,81 +63,99 @@ const Contact = () => {
   return (
     <div className="Contact">
       <VisibilitySensor
-          partialVisibility
-          onChange={(isVisible) => {
-            setVisibility(isVisible);
-            if (isVisible) {
-              setHasActivated(true)
-        }
-          }}
-        >
-          <>
-      <h1 style={{
-                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
-                transition: "all 400ms linear",
-              }}>Get In Touch</h1>
-      <form className={classes.root} name="contact" method="post" style={{
-                transform: visibility || hasActivated ? "translateY(0)" : "translateY(50px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
-                transition: "all 400ms linear",
-              }}>
-      <input type="hidden" name="form-name" value="contact" />
-        <TextField
-          required
-          autoComplete="new-password"
-          label="Name"
-          style={{ margin: 8 }}
-          fullWidth
-          margin="normal"
-          onChange={handleChange}
-          name="name"
-          error={isNameInvalid}
-          helperText={isNameInvalid && "Please Enter Your Name"}
-        />
-        <TextField
-          required
-          autoComplete="new-password"
-          label="Email"
-          style={{ margin: 8 }}
-          fullWidth
-          margin="normal"
-          onChange={handleChange}
-          name="email"
-          error={isEmailInvalid}
-          helperText={isEmailInvalid && "Please Enter a Valid Email"}
-        />
-        <TextField
-          autoComplete="new-password"
-          label="Subject"
-          style={{ margin: 8 }}
-          fullWidth
-          margin="normal"
-          onChange={handleChange}
-          name="subject"
-        />
-        <TextField
-          required
-          autoComplete="new-password"
-          label="Message"
-          multiline
-          style={{ margin: 8 }}
-          fullWidth
-          margin="normal"
-          onChange={handleChange}
-          name="message"
-          error={isMessageInvalid}
-          helperText={isMessageInvalid && "Please Provide a Message"}
-        />
-        <button onClick={handleFormSubmit} className="btn-primary">
-          Send Message
-        </button>
-      </form>
-      <footer>
-        <p>You can also connect with me by clicking on my social media profiles.</p>
-      </footer>
-      </>
-        </VisibilitySensor>
+        partialVisibility
+        onChange={(isVisible) => {
+          setVisibility(isVisible);
+          if (isVisible) {
+            setHasActivated(true);
+          }
+        }}
+      >
+        <>
+          <h1
+            style={{
+              transform:
+                visibility || hasActivated
+                  ? "translateY(0)"
+                  : "translateY(50px)",
+              opacity: visibility || hasActivated ? 1 : 0.25,
+              transition: "all 400ms linear",
+            }}
+          >
+            Get In Touch
+          </h1>
+          <form
+            className={classes.root}
+            name="contact"
+            method="post"
+            style={{
+              transform:
+                visibility || hasActivated
+                  ? "translateY(0)"
+                  : "translateY(50px)",
+              opacity: visibility || hasActivated ? 1 : 0.25,
+              transition: "all 400ms linear",
+            }}
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <TextField
+              required
+              autoComplete="new-password"
+              label="Name"
+              style={{ margin: 8 }}
+              fullWidth
+              margin="normal"
+              onChange={handleChange}
+              name="name"
+              error={isNameInvalid}
+              helperText={isNameInvalid && "Please Enter Your Name"}
+            />
+            <TextField
+              required
+              autoComplete="new-password"
+              label="Email"
+              style={{ margin: 8 }}
+              fullWidth
+              margin="normal"
+              onChange={handleChange}
+              name="email"
+              error={isEmailInvalid}
+              helperText={isEmailInvalid && "Please Enter a Valid Email"}
+            />
+            <TextField
+              autoComplete="new-password"
+              label="Subject"
+              style={{ margin: 8 }}
+              fullWidth
+              margin="normal"
+              onChange={handleChange}
+              name="subject"
+            />
+            <TextField
+              required
+              autoComplete="new-password"
+              label="Message"
+              multiline
+              style={{ margin: 8 }}
+              fullWidth
+              margin="normal"
+              onChange={handleChange}
+              name="message"
+              error={isMessageInvalid}
+              helperText={isMessageInvalid && "Please Provide a Message"}
+            />
+            <button onClick={handleFormSubmit} className="btn-primary">
+              Send Message
+            </button>
+          </form>
+          <footer>
+            <p>
+              You can also connect with me by clicking on my social media
+              profiles.
+            </p>
+          </footer>
+        </>
+      </VisibilitySensor>
     </div>
   );
 };

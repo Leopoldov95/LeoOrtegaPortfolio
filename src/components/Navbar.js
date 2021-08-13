@@ -30,8 +30,8 @@ const Navbar = () => {
     <nav className={`Navbar ${scrollState && "alt-nav"}`}>
       <div className="container">
         <div className="brand">
-          <h2 className='brand-lg'>{"{LEO ORTEGA}"}</h2>
-          <h2 className='brand-sm'>{"{LO}"}</h2>
+          <h2 className="brand-lg">{"{LEO ORTEGA}"}</h2>
+          <h2 className="brand-sm">{"{LO}"}</h2>
         </div>
         <div className="menu">
           <div className="hamburger" onClick={toggleMenu}>
