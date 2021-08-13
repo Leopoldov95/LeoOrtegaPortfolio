@@ -153,6 +153,15 @@ const Contact = () => {
               You can also connect with me by clicking on my social media
               profiles.
             </p>
+            <p>
+              Or Emailing me at{" "}
+              <a
+                className="primary-color"
+                href="mailto:leopoldoortegav@gmail.com"
+              >
+                leopoldoortegav@gmail.com
+              </a>
+            </p>
           </footer>
         </>
       </VisibilitySensor>
