@@ -78,7 +78,7 @@ const Contact = () => {
                 visibility || hasActivated
                   ? "translateY(0)"
                   : "translateY(50px)",
-              opacity: visibility || hasActivated ? 1 : 0.25,
+              opacity: visibility || hasActivated ? 1 : 0,
               transition: "all 400ms linear",
             }}
           >
@@ -93,7 +93,7 @@ const Contact = () => {
                 visibility || hasActivated
                   ? "translateY(0)"
                   : "translateY(50px)",
-              opacity: visibility || hasActivated ? 1 : 0.25,
+              opacity: visibility || hasActivated ? 1 : 0,
               transition: "all 400ms linear",
             }}
           >

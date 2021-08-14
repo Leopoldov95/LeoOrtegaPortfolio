@@ -78,7 +78,7 @@ const Navbar = (props) => {
                       transform: visibility
                         ? "translateY(0)"
                         : "translateY(-30px)",
-                      opacity: visibility ? 1 : 0.25,
+                      opacity: visibility ? 1 : 0,
                       transition: "all 500ms linear",
                     }}
                   >
@@ -96,7 +96,7 @@ const Navbar = (props) => {
                       transform: visibility
                         ? "translateY(0)"
                         : "translateY(-30px)",
-                      opacity: visibility ? 1 : 0.25,
+                      opacity: visibility ? 1 : 0,
                       transition: "all 600ms linear",
                     }}
                   >
@@ -115,7 +115,7 @@ const Navbar = (props) => {
                       transform: visibility
                         ? "translateY(0)"
                         : "translateY(-30px)",
-                      opacity: visibility ? 1 : 0.25,
+                      opacity: visibility ? 1 : 0,
                       transition: "all 700ms linear",
                     }}
                   >
@@ -134,7 +134,7 @@ const Navbar = (props) => {
                       transform: visibility
                         ? "translateY(0)"
                         : "translateY(-30px)",
-                      opacity: visibility ? 1 : 0.25,
+                      opacity: visibility ? 1 : 0,
                       transition: "all 800ms linear",
                     }}
                   >
@@ -153,7 +153,7 @@ const Navbar = (props) => {
                       transform: visibility
                         ? "translateY(0)"
                         : "translateY(-30px)",
-                      opacity: visibility ? 1 : 0.25,
+                      opacity: visibility ? 1 : 0,
                       transition: "all 900ms linear",
                     }}
                   >
@@ -176,7 +176,7 @@ const Navbar = (props) => {
                       transform: visibility
                         ? "translateY(0)"
                         : "translateY(-30px)",
-                      opacity: visibility ? 1 : 0.25,
+                      opacity: visibility ? 1 : 0,
                       transition: "all 1000ms linear",
                     }}
                   >

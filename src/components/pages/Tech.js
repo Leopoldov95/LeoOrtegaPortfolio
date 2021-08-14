@@ -23,7 +23,7 @@ const Tech = () => {
                 visibility || hasActivated
                   ? "translateY(0)"
                   : "translateY(50px)",
-              opacity: visibility || hasActivated ? 1 : 0.25,
+              opacity: visibility || hasActivated ? 1 : 0,
               transition: "all 500ms linear",
             }}
           >
@@ -35,7 +35,7 @@ const Tech = () => {
                 visibility || hasActivated
                   ? "translateY(0)"
                   : "translateY(50px)",
-              opacity: visibility || hasActivated ? 1 : 0.25,
+              opacity: visibility || hasActivated ? 1 : 0,
               transition: "all 500ms linear",
             }}
           >
@@ -52,7 +52,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 200ms linear",
               }}
             >
@@ -66,7 +66,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 250ms linear",
               }}
             >
@@ -80,7 +80,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 300ms linear",
               }}
             >
@@ -94,7 +94,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 350ms linear",
               }}
             >
@@ -108,7 +108,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 400ms linear",
               }}
             >
@@ -122,7 +122,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 450ms linear",
               }}
             >
@@ -136,7 +136,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 500ms linear",
               }}
             >
@@ -150,7 +150,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 550ms linear",
               }}
             >
@@ -164,7 +164,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 600ms linear",
               }}
             >
@@ -178,7 +178,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 650ms linear",
               }}
             >
@@ -192,7 +192,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 700ms linear",
               }}
             >
@@ -206,7 +206,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 750ms linear",
               }}
             >
@@ -220,7 +220,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 800ms linear",
               }}
             >
@@ -234,7 +234,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 850ms linear",
               }}
             >
@@ -248,7 +248,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 900ms linear",
               }}
             >
@@ -262,7 +262,7 @@ const Tech = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(30px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 950ms linear",
               }}
             >

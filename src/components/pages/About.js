@@ -23,7 +23,7 @@ const About = () => {
                 visibility || hasActivated
                   ? "translateY(0)"
                   : "translateY(50px)",
-              opacity: visibility || hasActivated ? 1 : 0.25,
+              opacity: visibility || hasActivated ? 1 : 0,
               transition: "all 700ms linear",
             }}
           >
@@ -38,7 +38,7 @@ const About = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(50px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 200ms linear",
               }}
             >
@@ -55,7 +55,7 @@ const About = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(50px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 400ms linear",
               }}
             >
@@ -75,7 +75,7 @@ const About = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(50px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 600ms linear",
               }}
             >
@@ -92,7 +92,7 @@ const About = () => {
                   visibility || hasActivated
                     ? "translateY(0)"
                     : "translateY(50px)",
-                opacity: visibility || hasActivated ? 1 : 0.25,
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 800ms linear",
               }}
             >
@@ -110,7 +110,7 @@ const About = () => {
                 visibility || hasActivated
                   ? "translateY(0)"
                   : "translateY(80px)",
-              opacity: visibility || hasActivated ? 1 : 0.25,
+              opacity: visibility || hasActivated ? 1 : 0,
               transition: "all 700ms linear",
             }}
           >
