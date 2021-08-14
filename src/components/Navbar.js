@@ -2,8 +2,26 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import VisibilitySensor from "react-visibility-sensor-v2";
 import "./Navbar.scss";
+import { withStyles } from "@material-ui/core/styles";
+import Switch from "@material-ui/core/Switch";
 
-const Navbar = () => {
+const PurpleSwitch = withStyles({
+  switchBase: {
+    color: "slateblue",
+    "&$checked": {
+      color: "slateblue",
+    },
+    "&$checked + $track": {
+      backgroundColor: "slateblue",
+    },
+  },
+  checked: {},
+  track: {
+    backgroundColor: "slateblue",
+  },
+})(Switch);
+
+const Navbar = (props) => {
   let listener = null;
   const [visibility, setVisibility] = useState(false);
   const [scrollState, setScrollState] = useState(false);
@@ -25,6 +43,10 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+  };
+
+  const handleSwitch = () => {
+    props.setToggleTheme(!props.toggleTheme);
   };
   return (
     <nav className={`Navbar ${scrollState && "alt-nav"}`}>
@@ -160,6 +182,18 @@ const Navbar = () => {
                   >
                     RESUME
                   </a>
+                  <div className="theme">
+                    <PurpleSwitch
+                      checked={props.toggleTheme}
+                      onChange={handleSwitch}
+                      name="check"
+                    />
+                    <img
+                      src={`img/navbar/${
+                        props.toggleTheme ? "sun" : "moon"
+                      }.png`}
+                    />
+                  </div>
                 </>
               </VisibilitySensor>
             </ul>
