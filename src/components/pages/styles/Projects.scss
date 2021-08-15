@@ -1,8 +1,8 @@
 .Projects {
   margin-top: 4rem;
   .btn {
-    border: 1px solid slateblue;
-    color: slateblue;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
     padding: 12px 1rem;
     display: inline-block;
     width: 120px;
@@ -35,7 +35,7 @@
       .info {
         text-align: center;
         .tech {
-          color: slateblue;
+          color: dodgerblue;
           padding: 10px 0;
           display: flex;
           justify-content: center;
@@ -72,7 +72,7 @@
           justify-content: space-between;
           align-items: center;
           .folder {
-            color: slateblue;
+            color: dodgerblue;
             font-size: 2.5rem;
           }
           .links {
@@ -81,7 +81,7 @@
               font-size: 1.2rem;
               color: black;
               &:hover {
-                color: slateblue;
+                color: dodgerblue;
               }
             }
           }
@@ -94,7 +94,7 @@
           }
         }
         .tech {
-          color: slateblue;
+          color: dodgerblue;
           padding: 10px 0;
           display: flex;
           justify-content: center;

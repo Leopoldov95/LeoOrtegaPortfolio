@@ -1,13 +1,13 @@
-$primary-color: slateblue;
+$primary-color: dodgerblue;
 
 .primary-color {
   color: $primary-color;
 }
 
 .btn-primary {
-  border: 1px solid slateblue;
+  border: 1px solid dodgerblue;
   background-color: transparent;
-  color: slateblue;
+  color: dodgerblue;
   padding: 12px 1rem;
   margin: 2rem auto;
 }

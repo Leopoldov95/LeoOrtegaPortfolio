@@ -134,6 +134,9 @@ const About = () => {
                 or travelling.
               </p>
             </div>
+            <div className="profile">
+              <img src="img/main/about/me.jpg" />
+            </div>
           </section>
         </>
       </VisibilitySensor>

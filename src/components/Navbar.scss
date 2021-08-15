@@ -18,7 +18,7 @@
     margin: auto;
 
     .brand {
-      color: yellow;
+      color: dodgerblue;
       &-sm {
         display: none;
       }
@@ -27,7 +27,7 @@
       .hamburger {
         display: none;
         font-size: 2rem;
-        color: slateblue;
+        color: dodgerblue;
         position: fixed;
         z-index: 50;
         right: 20px;
@@ -50,8 +50,8 @@
         }
         .btn {
           margin-left: 1rem;
-          border: 1px solid slateblue;
-          color: slateblue;
+          border: 1px solid dodgerblue;
+          color: dodgerblue;
           padding: 12px 1rem;
         }
       }
@@ -64,7 +64,7 @@
   background-color: rgba(51, 51, 51, 0.95);
   transition: all ease 300ms;
   .brand {
-    color: slateblue !important;
+    color: dodgerblue !important;
   }
 }
 
