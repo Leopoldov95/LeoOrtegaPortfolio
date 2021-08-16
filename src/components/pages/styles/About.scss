@@ -59,6 +59,15 @@
   }
 }
 /* Tablet/Mobile Display */
+@media only screen and (max-width: 1300px) {
+  .About {
+    .info {
+      width: auto;
+      margin: 0 4rem;
+    }
+  }
+}
+/* Tablet/Mobile Display */
 @media only screen and (max-width: 950px) {
   .About {
     .info {
