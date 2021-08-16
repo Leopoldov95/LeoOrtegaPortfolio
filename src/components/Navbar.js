@@ -168,7 +168,7 @@ const Navbar = (props) => {
                     </Link>
                   </li>
                   <a
-                    href="https://drive.google.com/file/d/1vOp7F00_lxftqVd0b5QneVNSFklLSLoj/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1YnRlPx-Oe8j-HmeMCXTJsPI6r3ea6C5A/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn"
