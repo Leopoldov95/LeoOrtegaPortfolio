@@ -87,6 +87,10 @@
     }
     .info {
       flex-direction: column;
+      .profile {
+        text-align: center;
+        width: 50%;
+      }
     }
   }
 }
@@ -102,6 +106,9 @@
       .quote {
         padding: 1rem;
         font-size: 1rem;
+      }
+      .profile {
+        width: 100%;
       }
     }
   }
