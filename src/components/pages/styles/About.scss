@@ -71,6 +71,7 @@
 @media only screen and (max-width: 950px) {
   .About {
     .info {
+      
       .quote {
         flex-basis: 75%;
       }
@@ -96,6 +97,7 @@
     }
     .info {
       flex-direction: column;
+      margin: auto;
       .profile {
         text-align: center;
         width: 50%;
