@@ -10,4 +10,9 @@ $primary-color: dodgerblue;
   color: dodgerblue;
   padding: 12px 1rem;
   margin: 2rem auto;
+  transition: all ease 300ms;
+  &:hover {
+    color: #ececec;
+    background-color: dodgerblue;
+  }
 }
