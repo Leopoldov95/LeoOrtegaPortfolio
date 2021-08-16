@@ -79,8 +79,8 @@ body {
   .MuiInput-underline:before {
     border-bottom: 1px solid #ececec;
   }
-  .MuiInput-underline:hover {
-    border-bottom: 1px solid #ececec !important;
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid #ececec;
   }
 
   /* Tablet/Mobile Display */

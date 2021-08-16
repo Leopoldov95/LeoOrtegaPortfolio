@@ -20,6 +20,12 @@
       text-align: center;
     }
   }
+  .MuiInput-underline:after {
+    border-bottom: 2px solid dodgerblue;
+  }
+  .MuiFormLabel-root.Mui-focused {
+    color: dodgerblue;
+  }
 }
 
 /* Mobile Display */
