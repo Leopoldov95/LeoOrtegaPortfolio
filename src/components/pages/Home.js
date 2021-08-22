@@ -32,7 +32,7 @@ const Home = () => {
         </h4>
       </main>
       <Link
-        to="about"
+        to="projects"
         className="home-btn"
         smooth={true}
         offset={-80}

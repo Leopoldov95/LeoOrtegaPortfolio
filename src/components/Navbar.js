@@ -102,12 +102,12 @@ const Navbar = (props) => {
                   >
                     <Link
                       onClick={toggleMenu}
-                      to="about"
+                      to="projects"
                       smooth={true}
                       duration={500}
                       offset={-80}
                     >
-                      About
+                      Projects
                     </Link>
                   </li>
                   <li
@@ -121,14 +121,15 @@ const Navbar = (props) => {
                   >
                     <Link
                       onClick={toggleMenu}
-                      to="projects"
+                      to="about"
                       smooth={true}
                       duration={500}
                       offset={-80}
                     >
-                      Projects
+                      About
                     </Link>
                   </li>
+
                   <li
                     style={{
                       transform: visibility

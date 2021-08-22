@@ -11,11 +11,11 @@ const Main = () => {
       <section id="home" name="home">
         <Home />
       </section>
-      <section id="about" name="about">
-        <About />
-      </section>
       <section id="projects" name="projects">
         <Projects />
+      </section>
+      <section id="about" name="about">
+        <About />
       </section>
       <section id="tech" name="tech">
         <Tech />
