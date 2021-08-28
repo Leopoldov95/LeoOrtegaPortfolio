@@ -1,5 +1,5 @@
-# My Personal Portfolio 👨‍💻
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f9ff83d6-2b95-4422-b50b-62431851294e/deploy-status)](https://app.netlify.com/sites/leoortega/deploys)
+# My Personal Portfolio V2 👨‍💻
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7d7744c-f89b-4845-8858-8f7899bb7df6/deploy-status)](https://app.netlify.com/sites/leoortegaportfolio/deploys)
 ## Table of Contents
 * [Screenshot](#screenshot)
 * [General Info](#general-info)
@@ -12,22 +12,27 @@
 ![ScreenShot](./screenshot.png?raw=true)
 
 ## General Info
-This is my personal portfolio where I host my personal information such as my projects, what technologies I uses, my resume, and a way to contact me. 
+This is my second version of my personal portfolio where I host my personal information such as my projects, what technologies I uses, my resume, and a way to contact me. 
 
 ## Usage
-Simply click on the demo link provided or download & run index.html.
-If you want to use SASS or PUG you must first install the dependencies included in the package.json file:
+Simply click on the demo link provided or download & install the necessary depencies using:
 ```bash
 npm install
 ```
+Then start the application using:
+```bash
+npm start
+```
+
 
 ## Features
 * Fully responsive portfolio that looks great on all screen sizes
 * Information about me
 * My projects
-* A functioning contact form
+* A functioning contact form with error handling
+* light and dark theme
 * List of technologies I use
-* A navbar to help you navigate
+* A navbar with smoothscrolling
 
 ## Technologies
 The app was created with the following technologies
@@ -35,6 +40,4 @@ The app was created with the following technologies
 * SASS
 
 ## What I Learned
-This was a fun project for me as I got the opportunity to really express my creativity and showcase the work I do and what technologies I use. I certainly learned a lot about CSS styling and position and how to make the content look best across multiple platforms. This project really emphasized how important it is to understand CSS. I also got the chance to work with Pug, a HTML template engine. Tedious at first, I was able to use Pug to help me make this project cleaner an the Pug mixins really helped me cutback on writing lots of repeating code.
-
-Overtime I also learned how important it is to make my portfolio stand out and to always improve it. After all, it really is the first impression people will get of me as a developer.
+This was my second version of my personal portfolio. The main motivation for this is that I created my first portfolio when I was fairly new to web developement and only knew HTML, CSS, and SASS. As both my technical and design skills improved overtime I wanted my portfolio to reflect my current knowledge. This version features much more animation and a better UI experience as well as featuring a light and dark theme for easy viewing at anytime.
