@@ -97,10 +97,10 @@ const About = () => {
               }}
             >
               <div className="img-wrapper">
-                <img src="img/main/about/passport.png" alt="passport" />
+                <img src="img/main/about/smartphone.png" alt="smartphone" />
               </div>
 
-              <h4>Traveler</h4>
+              <h4>Mobile Responsive</h4>
             </div>
           </section>
           <section

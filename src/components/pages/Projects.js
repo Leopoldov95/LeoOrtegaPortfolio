@@ -47,6 +47,55 @@ const Projects = () => {
               }}
             >
               <div className="img">
+                <img src="img/main/projects/suay.png" alt="cycle" />
+              </div>
+              <div className="info">
+                <h1>Suay Resort</h1>
+                <div className="tech">
+                  <span>MongoDB</span>
+                  <span>Express</span>
+                  <span>ReactJS</span>
+                  <span>Redux</span>
+                  <span>NodeJS</span>
+                  <span>REST API</span>
+                </div>
+                <p>
+                  A MERN stack POC hotel website for a beautful resort. Users
+                  can browse through rooms and amenties as well as creating and
+                  managing reservations.
+                </p>
+                <div className="links">
+                  <a
+                    className="btn"
+                    href="https://suay-resort.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    className="btn"
+                    href="https://github.com/Leopoldov95/hotel_mern"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="card"
+              style={{
+                transform:
+                  visibility || hasActivated
+                    ? "translateY(0)"
+                    : "translateY(50px)",
+                opacity: visibility || hasActivated ? 1 : 0,
+                transition: "all 600ms linear",
+              }}
+            >
+              <div className="img">
                 <img src="img/main/projects/cycle.png" alt="cycle" />
               </div>
               <div className="info">
@@ -83,17 +132,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="card"
-              style={{
-                transform:
-                  visibility || hasActivated
-                    ? "translateY(0)"
-                    : "translateY(50px)",
-                opacity: visibility || hasActivated ? 1 : 0,
-                transition: "all 600ms linear",
-              }}
-            >
+            <div className="card">
               <div className="img">
                 <img src="img/main/projects/pokedex.png" alt="pokedex" />
               </div>
@@ -275,6 +314,41 @@ const Projects = () => {
                 <div className="tech">
                   <span>Pug</span>
                   <span>SASS</span>
+                </div>
+              </div>
+              <div className="card">
+                <div className="icons">
+                  <div className="folder">
+                    <i className="far fa-folder"></i>
+                  </div>
+                  <div className="links">
+                    <a
+                      href="https://github.com/Leopoldov95/Calculator_App"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://codepen.io/leopoldov95/pen/oNzJmwP"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="det">
+                  <h3>JavaScript Calculator</h3>
+                  <p>
+                    A simple yet functioning calculator I created using HTML,
+                    CSS, and JavaScript.
+                  </p>
+                </div>
+                <div className="tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
                 </div>
               </div>
             </section>

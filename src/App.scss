@@ -21,7 +21,7 @@ body {
 
 /* Dark Theme */
 .dark-theme {
-  background-color: #232323;
+  background-color: #061b2b;
   color: #ececec;
 
   .alt-nav {
@@ -44,6 +44,10 @@ body {
       .icon-container {
         .img-wrapper {
           box-shadow: 0px 2px 8px #9886a88f;
+          background-color: #04111b;
+          img {
+            filter: invert(100%);
+          }
         }
       }
     }
@@ -51,15 +55,24 @@ body {
   .Projects {
     .container {
       .card {
-        color: #333;
+        color: white;
+        background-color: #04111b;
         box-shadow: 0px 2px 8px #9886a88f;
       }
     }
     .more {
       .more-projects {
         .card {
-          color: #333;
+          color: white;
+          background-color: #04111b;
           box-shadow: 0px 2px 8px #9886a88f;
+          .icons {
+            .links {
+              a {
+                color: white;
+              }
+            }
+          }
         }
       }
     }
@@ -68,8 +81,12 @@ body {
   .Tech {
     .tech-container {
       .tech-card {
-        color: #333;
+        color: white;
+        background-color: #04111b;
         box-shadow: 0px 2px 8px #9886a88f;
+        .theme-color {
+          filter: invert(100%);
+        }
       }
     }
   }

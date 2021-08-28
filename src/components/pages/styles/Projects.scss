@@ -60,11 +60,13 @@
     .more-projects {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       opacity: 0;
       height: 0;
       transition: all ease 200ms;
       .card {
         width: 300px;
+        margin: 1rem;
         background-color: white;
         box-shadow: 0px 4px 8px #9886a88f;
         padding: 1rem;

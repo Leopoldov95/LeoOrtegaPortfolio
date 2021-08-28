@@ -112,7 +112,11 @@ const Tech = () => {
                 transition: "all 400ms linear",
               }}
             >
-              <img src="img/main/skills/express.svg" alt="express" />
+              <img
+                className="theme-color"
+                src="img/main/skills/express.svg"
+                alt="express"
+              />
               <span>Express</span>
             </div>
             <div
