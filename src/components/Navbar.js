@@ -183,7 +183,7 @@ const Navbar = (props) => {
                   >
                     RESUME
                   </a>
-                  <div className="theme">
+                  <div className="theme" onClick={toggleMenu}>
                     <PurpleSwitch
                       checked={props.toggleTheme}
                       onChange={handleSwitch}
