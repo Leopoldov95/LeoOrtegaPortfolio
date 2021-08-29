@@ -141,7 +141,7 @@ const Projects = () => {
                 <div className="tech">
                   <span>ReactJS</span>
                   <span>API</span>
-                  <span>SASS</span>
+                  <span>CSS</span>
                 </div>
                 <p>
                   A full featured Pokdex app that contains all Pokemon and their
@@ -214,7 +214,7 @@ const Projects = () => {
                 <div className="tech">
                   <span>JavaScript</span>
                   <span>HTML</span>
-                  <span>CSS</span>
+                  <span>SASS</span>
                 </div>
                 <p>
                   A 2 to 4 player luck and strategy dice game created using
