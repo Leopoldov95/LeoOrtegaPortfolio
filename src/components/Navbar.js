@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PDF from "../Leopoldo_Ortega.pdf";
 import { Link } from "react-scroll";
 import VisibilitySensor from "react-visibility-sensor-v2";
 import "./Navbar.scss";
@@ -169,7 +170,7 @@ const Navbar = (props) => {
                     </Link>
                   </li>
                   <a
-                    href="https://drive.google.com/file/d/1FAPsISnVwia6H5zYKibhuDD6JocoT08_/view?usp=sharing"
+                    href={PDF}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn"
@@ -198,12 +199,6 @@ const Navbar = (props) => {
                 </>
               </VisibilitySensor>
             </ul>
-
-            {/*  <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#tech">Tech</a>
-          <a href="#contact">Contact</a> */}
           </div>
         </div>
       </div>
