@@ -95,6 +95,20 @@ const Tech = () => {
                     ? "translateY(0)"
                     : "translateY(30px)",
                 opacity: visibility || hasActivated ? 1 : 0,
+                transition: "all 325ms linear",
+              }}
+            >
+              <img src="img/main/skills/ts.svg" alt="typescript" />
+              <span>TypeScript</span>
+            </div>
+            <div
+              className="tech-card"
+              style={{
+                transform:
+                  visibility || hasActivated
+                    ? "translateY(0)"
+                    : "translateY(30px)",
+                opacity: visibility || hasActivated ? 1 : 0,
                 transition: "all 350ms linear",
               }}
             >
