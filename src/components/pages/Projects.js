@@ -316,41 +316,6 @@ const Projects = () => {
                   <span>SASS</span>
                 </div>
               </div>
-              <div className="card">
-                <div className="icons">
-                  <div className="folder">
-                    <i className="far fa-folder"></i>
-                  </div>
-                  <div className="links">
-                    <a
-                      href="https://github.com/Leopoldov95/Calculator_App"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      href="https://codepen.io/leopoldov95/pen/oNzJmwP"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="det">
-                  <h3>JavaScript Calculator</h3>
-                  <p>
-                    A simple yet functioning calculator I created using HTML,
-                    CSS, and JavaScript.
-                  </p>
-                </div>
-                <div className="tech">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
-              </div>
             </section>
           </section>
         </>
