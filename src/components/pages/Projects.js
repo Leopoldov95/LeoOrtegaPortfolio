@@ -278,7 +278,11 @@ const Projects = () => {
             </div>
           </section>
           <section className="more">
-            <button onClick={handleDisplay} className="btn-primary">
+            <button
+              onClick={handleDisplay}
+              className="btn-primary"
+              style={{ margin: "2rem auto 0 auto" }}
+            >
               {display ? "Hide" : "More"}
             </button>
             <section className={`more-projects ${display && "more-active"}`}>
